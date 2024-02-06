@@ -190,7 +190,7 @@ function FirebaseCrud() {
 
     return (
         <>
-            <div className="flex flex-col justify-evenly gap-5 w-full border border-gray-200 p-5 lg:flex-row-reverse lg:justify-evenly lg:p-0">
+            <div className="flex flex-col justify-evenly gap-5 w-full p-5 lg:flex-row-reverse lg:justify-evenly lg:p-0">
 
                 <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <form className="max-w-sm mx-auto">
@@ -265,7 +265,7 @@ function FirebaseCrud() {
 
 
 
-                <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <div className="relative overflow-x-auto  sm:rounded-lg">
                     {loading ? (
                         <div >
                         <div class="flex items-center justify-center w-56 h-56 mt-24 ">
@@ -276,8 +276,8 @@ function FirebaseCrud() {
 </div>
                         </div>
                     ) : (
-                        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <table className="w-full text-sm text-left rtl:text-right text-gray-900 dark:text-gray-400 shadow-md">
+                        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-900 dark:text-gray-400 shadow-md ">
                             <tr>
                                 <th scope="col" className="px-6 py-3">
                                     ID
@@ -298,7 +298,7 @@ function FirebaseCrud() {
                         </thead>
                         <tbody>
                             {userData.map((user) => (
-                                <tr key={user.name} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                                <tr key={user.name} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 shadow-md">
                                     <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                         {user.id}
                                     </th>
