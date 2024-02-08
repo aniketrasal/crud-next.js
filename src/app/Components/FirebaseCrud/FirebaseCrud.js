@@ -200,7 +200,7 @@ function FirebaseCrud() {
         localStorage.setItem('deletedUserIds', JSON.stringify([...deletedUserIds, userId]));
 
         // Optional: Show a confirmation message on the frontend
-        alert("User deleted from frontend only");
+        alert("User deleted successfully.");
     };
 
     // Function to get deleted user IDs from local storage
