@@ -9,7 +9,7 @@ export default function Navbar() {
     <div className="flex flex-wrap items-left p-5 border border-gray-200 w-full">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://thepric.com/wp-content/uploads/2021/08/play_store_512-removebg-preview-1.png" className="h-10" alt="Flowbite Logo" />
-            <span className="text-3xl font-semibold whitespace-nowrap dark:text-white">Pric</span>
+            <span className="text-3xl font-semibold whitespace-nowrap">Pric</span>
         </a>
     </div>
 </nav>
